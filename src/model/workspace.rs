@@ -341,6 +341,7 @@ fn detect_language(path: &std::path::Path) -> String {
         Some("go") => "go".into(),
         Some("c") | Some("h") => "c".into(),
         Some("cpp") | Some("hpp") | Some("cc") | Some("cxx") => "cpp".into(),
+        Some("vue") => "vue".into(),
         Some("java") => "java".into(),
         Some(ext) => ext.to_string(),
         None => "unknown".into(),
